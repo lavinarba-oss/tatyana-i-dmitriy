@@ -523,32 +523,27 @@ section {
 
 /* Позиции текста на линии - настройте эти значения для корректировки */
 .timeline-item[data-index="0"] {
-    top: 9%;
+    top: 12%;
 }
 
 /* ЗАГС */
 .timeline-item[data-index="1"] {
-    top: 24%;
-}
-
-/* Фотосессия */
-.timeline-item[data-index="2"] {
-    top: 40%;
+    top: 29%;
 }
 
 /* Дом жениха */
-.timeline-item[data-index="3"] {
-    top: 56%;
+.timeline-item[data-index="2"] {
+    top: 46%;
 }
 
 /* Прокат до парка */
-.timeline-item[data-index="4"] {
-    top: 72%;
+.timeline-item[data-index="3"] {
+    top: 65%;
 }
 
-/* Старый дворик */
-.timeline-item[data-index="5"] {
-    top: 87%;
+/* Старый двор */
+.timeline-item[data-index="4"] {
+    top: 83%;
 }
 
 /* Завершение */
