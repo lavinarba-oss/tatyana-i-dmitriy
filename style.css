@@ -570,12 +570,12 @@ section {
 }
 
 .timeline-item.active .timeline-label {
-    color: #ff3366 !important;
-    text-shadow: 0 0 10px rgba(255, 51, 102, 0.5) !important;
+    color: #a8703c !important;
+    text-shadow: 0 0 12px rgba(168, 112, 60, 0.45) !important;
 }
 
 .timeline-item.active .timeline-time {
-    color: #ff3366 !important;
+    color: #a8703c !important;
 }
 
 /* =========================== */
