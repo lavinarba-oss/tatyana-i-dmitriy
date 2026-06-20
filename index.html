@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приглашение на свадьбу | Татьяна & Дмитрий</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Заставка с конвертом -->
+    <div class="envelope-container" id="envelopeContainer">
+        <div class="envelope-bg"></div>
+        <div class="triangle-top"></div>
+        <div class="stamp" id="stamp"></div>
+        <div class="triangle-bottom"></div>
+    </div>
+
+    <audio id="weddingMusic" loop>
+        <source src="wedding-music.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио элемент.
+    </audio>
+
+    <!-- Основной контент -->
+    <div class="main-content" id="mainContent">
+        <!-- Герой с фотографией -->
+        <section class="hero">
+            <div class="container">
+                <h2 class="hero-title">Татьяна & Дмитрий</h2>
+                <p class="hero-date">08 / 08 / 26</p>
+
+                <!-- Таймер обратного отсчета -->
+                <div class="countdown-container">
+                    <p class="countdown-text">До нашего дня осталось:</p>
+                    <div class="countdown-timer" id="countdown">
+                        <div class="time-block">
+                            <span class="time-number" id="days">000</span>
+                            <span class="time-label">дней</span>
+                        </div>
+                        <div class="time-block">
+                            <span class="time-number" id="hours">00</span>
+                            <span class="time-label">часов</span>
+                        </div>
+                        <div class="time-block">
+                            <span class="time-number" id="minutes">00</span>
+                            <span class="time-label">минут</span>
+                        </div>
+                        <div class="time-block">
+                            <span class="time-number" id="seconds">00</span>
+                            <span class="time-label">секунд</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Блок управления - сверху кнопка музыки -->
+                <div class="controls-top">
+                    <div class="music-control" id="musicControl">
+                        <i class="fas fa-pause" id="musicIcon"></i>
+                    </div>
+                </div>
+
+                <!-- Стрелка для скролла - ниже таймера -->
+                <div class="scroll-hint">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Приветственная секция -->
+        <section class="welcome-section">
+            <div class="container">
+                <p class="welcome-text welcome-text--passions">Дорогие гости!</p>
+                <p class="welcome-text welcome-text--montserrat">Мы очень хотим сделать этот день особенным, поэтому
+                    приглашаем Вас разделить с нами торжество, посвященное дню нашей свадьбы!</p>
+
+                <div class="calendar-container">
+                    <img src="calendar.png" alt="Дата нашей свадьбы" class="calendar-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Программа дня с анимацией сердца -->
+        <section class="schedule-section" id="scheduleSection">
+            <div class="container">
+                <div class="timeline-viewport">
+                    <div class="timeline-line-img">
+                        <img src="line.svg" alt="Таймлайн" class="line-image">
+                    </div>
+
+                    <svg class="motion-path" width="300" height="1378" viewBox="0 0 300 1378" aria-hidden="true">
+                        <path id="heartMotionPath"
+                            d="M160.2404 0.7446C143.0498 130.3245 275.5576 133.8347 262.9866 233.3739C247.2478 357.9947 31.2581 334.0184 31.2572 462.9924C31.2563 591.9655 274.3348 573.6124 281.228 707.4962C288.1212 841.376 112.3066 807.0884 31.2572 892.7164C-59.6853 988.7943 77.4536 1042.7108 177.211 1078.8888C255.9866 1107.4529 298.7455 1152.4594 298.7407 1206.9954C298.7358 1260.9689 250.0732 1309.9371 163.3716 1377.3123"
+                            fill="none" stroke="transparent" stroke-width="2" />
+                    </svg>
+
+                    <div class="heart-fixed">
+                        <img src="heart.svg" alt="❤" class="heart-icon">
+                    </div>
+
+                    <div class="timeline-content">
+                        <div class="timeline-item left" data-index="0">
+                            <div class="timeline-text">
+                                <span class="timeline-label">ЗАГС</span>
+                                <span class="timeline-time">12:00</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item right" data-index="1">
+                            <div class="timeline-text">
+                                <span class="timeline-label">Фотосессия</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item left" data-index="2">
+                            <div class="timeline-text">
+                                <span class="timeline-label">Дом жениха</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item right" data-index="3">
+                            <div class="timeline-text">
+                                <span class="timeline-label">Прокат до парка</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item left" data-index="4">
+                            <div class="timeline-text">
+                                <span class="timeline-label">Старый двор</span>
+                                <span class="timeline-time">16:00</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item right" data-index="5">
+                            <div class="timeline-text">
+                                <span class="timeline-label">Завершение</span>
+                                <span class="timeline-time">23:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Место проведения -->
+        <section class="location-section">
+            <div class="container">
+                <p class="location-title">Место проведения</p>
+                <div class="location-content">
+                    <span class="location-name">Кафе «Старый двор»</span>
+                    <div class="location-address">
+                        <span class="address-line">Клиническая ул., 1А, рабочий посёлок Таловая</span>
+                        <span class="address-line">Сбор гостей и начало банкета — в 16:00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="location-photo-container">
+                <img src="Otrada.jpg" data-src="Otrada.jpg" alt="Кафе «Старый двор»"
+                    class="location-photo lazy-load">
+            </div>
+
+            <div class="pulse-button-container">
+                <a href="https://yandex.ru/navi/org/stary_dvor/184843972464?si=5u7zy6pfrh8yfbpz5w1pffaj44"
+                    class="pulse-button" target="_blank" rel="noopener noreferrer">
+                    <span class="button-text">Построить маршрут</span>
+                </a>
+            </div>
+
+        </section>
+
+        <!-- Дресс-код -->
+        <section class="dresscode-section">
+            <div class="container">
+                <p class="dresscode-title">Дресс-код</p>
+                <p class="dresscode-text">Будем благодарны, если вы поддержите нашу шоколадную палитру —
+                    от светло-коричневого до глубокого, но не чёрного. Платья и аксессуары с бусами приветствуются.
+                </p>
+                <div class="dresscode-photo-wrapper">
+                    <img src="dresscode.jpg" alt="Шоколадная палитра свадьбы" class="dresscode-photo">
+                </div>
+            </div>
+
+
+            <!-- =========================== -->
+            <!-- КАРУСЕЛЬ ФОТОГРАФИЙ -->
+            <!-- =========================== -->
+            <div class="carousel-section">
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <!-- Слайды будут добавлены динамически JavaScript -->
+                        <div class="carousel-track" id="carouselTrack">
+                            <!-- Слайды добавятся сюда -->
+                        </div>
+
+                        <!-- Кнопки навигации -->
+                        <button class="carousel-btn carousel-btn--prev" id="prevBtn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn carousel-btn--next" id="nextBtn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+
+                        <!-- Индикаторы точек -->
+                        <div class="carousel-dots" id="carouselDots">
+                            <!-- Точки добавятся сюда -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="location-photo-container-details">
+                <div class="details-card">
+                    <div class="details-photo-wrapper">
+                        <img src="Details.jpg" alt="Детали" class="location-photo-details">
+                    </div>
+                    <div class="details-text-side">
+                        <p class="Details-title">Details</p>
+                        <p class="Details-line">Свои тёплые слова и пожелания приносите в сердцах, а подарки — в
+                            конверте.</p>
+                        <p class="Details-line">Вместо цветов мы будем счастливы получить бутылочку вина, которую
+                            вместе разделим однажды вечером.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Взрослое торжество 15+ -->
+        <section class="adults-section">
+            <div class="container">
+                <p class="adults-title">Взрослое торжество</p>
+                <p class="adults-text">Наша свадьба задумана как вечер для взрослых. За праздничным столом мы будем рады
+                    гостям от 15 лет. Надеемся на ваше понимание и заранее благодарим за то, что подарите этот вечер
+                    себе и нам — без хлопот о малышах.</p>
+            </div>
+        </section>
+
+        <!-- Анкета гостя -->
+        <section class="rsvp-section" id="rsvpSection">
+            <div class="container">
+                <p class="rsvp-title">Подтверждение присутствия</p>
+                <p class="rsvp-subtitle">Просим ответить до 10 июля 2026 года</p>
+
+                <div class="google-forms-container">
+                    <div class="forms-iframe-wrapper">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSf77mf6RezUL61JSLhVLn7ReQBAm7uAY01yLB1rhXmqOwkY3Q/viewform?embedded=true"
+                            width="640" height="1100" frameborder="0" marginheight="0" marginwidth="0"
+                            title="Анкета гостя" loading="lazy" class="google-forms-iframe">
+                            Загрузка…
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Финальная секция -->
+        <section class="Goodbye-section">
+            <div class="container">
+                <div class="goodbye-photo-container">
+                    <div class="goodbye-photo-wrapper">
+                        <img src="goodbye.jpg" alt="До скорой встречи" class="goodbye-photo">
+                        <div class="goodbye-text-overlay">
+                            <p class="goodbye-title">До скорой встречи!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
